@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <title>Quartz Tree</title>
+        <script src = "functions.js"></script>
+        <script>
+            var product = "Quartz Tree";
+            var cost = 26;
+            window.onload=changeText;
+        </script>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+
+    <body style="background-color:rgb(235, 249, 255); color:rgb(33, 35, 61);">
+
+        <section style="text-align:right; font-size:3px;">
+            <h2><a id="cartsmall" style="font-size: 25px; color: rgb(255, 0, 106);" href="cart.html" title="View products & check out">Cart: 0</a></h2>
+        </section>
+        <hr>
+
+        <header>
+            <h1 style="color:cornflowerblue;">Quartz Tree</h1>
+        </header>
+
+        <hr>
+
+        <section style="text-align:center;">
+            <img src="https://miamiminingco.com/wp-content/uploads/2022/01/FP8A2425-600x840.jpg"alt="Tree example">
+            <p>
+                A small quartz tree mounted on a stone base. <br>
+                Its branches and trunk are made of twisted silver wire.<br>
+                Approximately 300 quartz leaves.
+            </p>
+            <h2 style="color:rgb(255, 0, 106)">
+                Price: $26.00
+            </h2>
+            <button onclick="cartAdd(product, cost)">Add to cart</button>
+        </section>
+
+        <hr>
+
+        <section id="return">
+            <h2><a id="return" href="homepage.html" title="Return">Back to Homepage</a></h2>
+        </section>
+
+        <hr>
+
+        <footer>
+            <p>Image sources: <br> 
+                <a style="color:rgb(255, 0, 106)" title= "Quartz tree" href="https://miamiminingco.com/product/clear-quartz-chip-tree-of-life-with-stone-base/">Quartz tree</a>
+            </p>
+        </footer>
+    </body>
+    
+</html>

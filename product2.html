@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <title>Miniature Dragon Statue</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src = "functions.js"></script>
+        <script>
+            var product = "Mini Dragon Statue";
+            var cost = 30;
+            window.onload=changeText;
+        </script>
+    </head>
+
+    <body style="background-color:cornflowerblue;">
+
+        <section style="text-align:right; font-size:3px;">
+            <h2><a id="cartsmall" style="font-size:25px;" href="cart.html" title="View products & check out">Cart: 0</a></h2>
+        </section>
+        <hr>
+
+        <header>
+            <h1 style="color:white;">Miniature Dragon Statue</h1>
+        </header>
+
+        <hr>
+
+        <section style="text-align:center">
+            <img src="https://i.pinimg.com/originals/e8/4a/95/e84a95e2219b2ee59abba1e0c0b807d8.jpg"alt="Statue example">
+            <p>
+                A minature dragon statue which fits in the palm of your hand. <br>
+                You may specify the design and colors used if painted.<br>
+                Made out of clay with acrylic paints.
+            </p>
+            <h2 style="color:yellow;">
+                Price: $30.00
+            </h2>
+            <button onclick="cartAdd(product,cost)">Add to cart</button>
+        </section>
+
+        <hr>
+
+        <section id="return">
+            <h2><a id="return" style="color:rgb(33, 35, 61);" href="homepage.html" title="Return">Back to Homepage</a></h2>
+        </section>
+
+        <hr>
+
+        <footer>
+            <p>Image sources: <br> <a title= "Dragon statue" href="https://www.pinterest.com/pin/375769162635404805/">Dragon statue</a>
+            </p>
+        </footer>
+    </body>
+    
+</html>

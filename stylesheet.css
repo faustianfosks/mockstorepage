@@ -1,0 +1,63 @@
+body {
+    background-color:rgb(33, 35, 61);
+    color:white; 
+}
+
+h1 {
+    font-size:40pt;
+    font-family:'Lucida Handwriting';
+    text-align:center;
+    color:cornflowerblue;
+}
+h2 {
+    font-size:30pt;
+    font-family:'Trebuchet MS';
+    color:rgb(171, 196, 243);
+}
+p {
+    font-size:15pt;
+    font-family:'Trebuchet MS';
+}
+section#alt1 {
+    font-size:15pt;
+    font-family:'Trebuchet MS';
+    background-color:rgb(64, 77, 119);
+}
+a#return {
+    text-align:center;
+    color:rgb(154, 185, 243);
+}
+section#return {
+    text-align:center;
+}
+ol {
+    font-size:20pt;
+    font-family:'Trebuchet MS';
+}
+a {
+    color:yellow;
+}
+footer {
+    text-align: center;
+}
+button {
+    background-color:yellow;
+    font-size:25pt;
+    padding:20px 30px;
+    border-radius:40%;
+    transition-duration: 0.1s;
+    color:rgb(33, 35, 61);
+    border:5px solid rgb(33, 35, 61);
+    font-weight:bold;
+}
+button:hover {
+    background-color:rgb(33, 35, 61);
+    color:yellow;
+    border:5px dashed yellow;
+}
+button:active {
+    background-color:yellow;
+}
+section#cart {
+    text-align:center;
+}

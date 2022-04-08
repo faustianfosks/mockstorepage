@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang = "en">
+<head>
+	<meta charset = "utf-8">
+	<title>Buy Page</title>
+	<script>
+        var productTest = "test product";
+        var costTest = 3;
+        var cartListDefault = "Empty";
+        var cartCostDefault = "$0.00";
+        function changeTextCart() 
+        {
+             if (localStorage.getItem("cartList"))
+            {
+                 document.getElementById("carttext").innerHTML = localStorage.getItem("cartList");
+            }
+            if (localStorage.getItem("cartCost"))
+            {
+                document.getElementById("cartcost").innerHTML = "$" + localStorage.getItem("cartCost")
+            }
+        }
+         window.onload=changeTextCart;
+    </script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src = "functions.js"></script>
+</head>
+
+<body>
+    <section id="cart">
+        <h2>Cart:</h2>
+        <p id="carttext">Empty</p>
+        <p id="cartcost">$0.00</p>
+        <hr>
+        <button style="padding:10px; font-size:15px; border-width:3px; background-color: white;" onclick="cartAdd(productTest, costTest)">test</button>
+        <button onclick="clearStorage()">Clear</button>
+    </section>
+    
+
+
+    <section id="return">
+        <h2><a id="return" href="homepage.html" title="Return">Back to Homepage</a></h2>
+    </section>
+
+
+</body>
+
+
+</html>
