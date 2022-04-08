@@ -6,9 +6,19 @@
         <link rel="stylesheet" href="stylesheet.css">
         <script src = "functions.js"></script>
         <script>
-            var product = "Mini Wooden Carving";
+            var product = "Mini Wooden Carving - $15";
             var cost = 15;
             window.onload=changeText;
+            function toggle() {
+                if (document.getElementById("painted").checked) {
+                    product = "Mini Wooden Carving (Painted) - $20";
+                    cost = 20;
+                }
+                else {
+                    product = "Mini Wooden Carving - $15";
+                    cost = 15;
+                }
+            }
         </script>
     </head>
 
@@ -35,7 +45,14 @@
             <h2 style="color:yellow;">
                 Price: $15.00
             </h2>
-            <button onclick="cartAdd(product,cost)">Add to cart</button>
+            <p>(+$5.00 if painted)</p>
+            <label for="painted">
+                Painted?
+            <input onclick="toggle()" class="checkbox" id="painted" type="checkbox" name="painted" value="yes">
+            </label>
+            <br>
+            <br>
+            <button onclick="toggle(); cartAdd(product,cost);">Add to cart</button>
         </section>
 
         <hr>
